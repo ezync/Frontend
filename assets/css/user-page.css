@@ -1,7 +1,9 @@
+
+
 body{
     margin: 0;
     padding: 0;
-    background: url(../images/bg.png);
+    background: url(../../images/bg.png);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -20,12 +22,12 @@ body{
     padding: 70px 30px;
 }
 
-.avatar{
+.logo{
     width: 100px;
-    height: 100px;
+    height: 50px;
     border-radius: 50%;
     position: absolute;
-    top: -50px;
+    top: 10px;
     left: calc(50% - 50px);
 }
 
