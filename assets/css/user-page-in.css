@@ -1,0 +1,90 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
+
+body {
+    margin: 0px;
+    background-color:#e9ebee;
+    font-family: "Scope one", serif;
+  }
+  
+.header {
+    background-color: #ffaf65;
+    padding: 2px 0px 8px 10%;
+}
+  
+.header *{
+    display:inline-block;
+}
+  
+p {
+    margin: 0px;
+}
+  
+.search {
+    background-color: white;
+    width: 400px;
+    height: 30px;
+    position: relative;
+    top: -4px;
+    border-radius: 5px;
+}
+  
+.logo {
+    background-image: url('https://www.facebook.com/rsrc.php/v2/ys/r/aVIyzaVqPTE.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -223px;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 24px;
+    position: relative;
+    top: 3px;
+  }
+  
+#inputText {
+    width: 350px;
+    border-radius: 5px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    padding-left: 5px;
+    font-size: 14px;
+    border: 0px;
+  }
+  
+.search-icon {
+    background-color: #f6f7f9;
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+}
+.search-icon img {
+    height: 15px;
+    width:15px;
+    margin: 10% 0;
+    border-radius: 5px;
+}
+
+.right-side{
+    float : right;
+}
+.right-side li{
+    vertical-align: top;
+    margin-right: 18px;
+    height: 70px;
+    line-height: 70px;
+}
+.right-side img{
+    margin-top: 0px;
+    height: 25px;
+    width: 25px;    
+}
+
+.right-side img.profile{
+    border-radius:20px;
+}

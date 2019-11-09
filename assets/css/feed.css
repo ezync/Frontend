@@ -1,0 +1,50 @@
+.main-body *{
+    display: inline-block;
+}
+
+.left {
+    width : 15%;
+}
+
+.right {
+    width : 700px;
+}
+
+.right .post #text {
+    margin : 10px 0px 10px 10px;
+    width : 600px;
+    height : 100px;
+}
+.right .post #post-button {
+    margin : 10px 0px 10px 0px;
+    width : 50px;
+    height : 100px;
+}
+
+.feed {
+    width: 700px;
+    height: auto;
+    background: rgb(235, 216, 185);
+    margin: 30px auto 0;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.feed .user-feed .picture{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right:5px;
+    border: 1px solid rgb(104, 98, 98);
+}
+
+.feed .user-feed {
+    margin-bottom: 10px;
+    font-size: medium;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-body {
+        display: none;
+    }
+}
