@@ -14,7 +14,7 @@ window.addEventListener('load', function() {
             <li><a href = "./profile.html"><img class="profile" src="../../images/logo_192x192.png"></a></li>
             <li><a href = "./chat.html"><img src="../../images/user-page/chat.png"></a></li>
             <li><a href = "./negotiation.html"><img src="../../images/user-page/handshake.png"></a></li>
-            <li><a href = "#setting"><img src="../../images/user-page/settings.png"></a></li>
+            <li><a href = "./setting.html"><img src="../../images/user-page/settings.png"></a></li>
         </ul>
     </div>`;
 });

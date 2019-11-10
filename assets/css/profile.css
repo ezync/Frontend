@@ -65,6 +65,7 @@
 .right {
     display: inline-block;
     width : 50%;
+    margin-left:20px;
 }
 
 .right .post #text {

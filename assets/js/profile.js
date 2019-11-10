@@ -1,41 +1,43 @@
 const COMPANY = [{
     id : 1,
     name : 'EZYNC',
-    logo : '../../images/logo_192x192.png',
+    logo : '../../images/logo_192x192.png', 
     background_image : '../../images/banner.jpg',
-    based_in : 'Paris',
     founded_on : '26/10/2019',
     email : 'ezync@gmail.com',
     description : 'First company',
-    industries : 'Social media',
-    activities : '1,2',
-    individuals : '1,2,3'
+    industries : 'Social Media',
+    activities : [1,2],
+    individuals : [1,2,3]
 },
 {
     id : 2,
     name : 'EZYNC2',
     logo : '../../images/logo_192x192.png', 
     background_image : '../../images/banner.jpg',
-    based_in : 'Paris',
     founded_on : '26/10/2019',
     email : 'ezync2@gmail.com',
     description : 'Second company',
-    industries : 'Social media',
-    activities : '',
-    individuals : ''
+    industries : 'Social Media',
+    activities : [],
+    individuals : []
 }]
 
 const ACTIVITY = [{
     id : 1,
-    date : '26/10/2019 00:00:00',
+    date : '26/10/2019',
+    time : '00:00:00',
     text : 'First Activity',
     media : '',
+    type : 'Progress',
     company : '1'
 },{
     id : 2,
-    date : '27/10/2019 00:00:00',
+    date : '27/10/2019',
+    time: '00:00:00',
     text : 'Second Activity',
     media : '',
+    type : 'Story',
     company : '1'
 }]
 
@@ -45,27 +47,27 @@ const USER = [{
     email : 'nicholasbudiharsa@gmail.com',
     picture : '../../images/nic.png',
     status : 'Hi !',
-    companies : '1',
+    companies : [1],
     linkedin : 'https://www.linkedin.com/in/nicholas-budiharsa-4236bb170/',
-    position : 'CEO'
+    position : 'Chief Executive Officer (CEO)'
 },{
     id : 2,
     name : 'Jiwon P',
     email : 'jiwon2311@gmail.com@gmail.com',
     picture : '../../images/jiwon.png',
     status : 'Hi !',
-    companies : '1',
+    companies : [1],
     linkedin : 'https://www.linkedin.com/in/jiwon-park-473998170/',
-    position : 'CEO'
+    position : 'Chief Executive Officer (CEO)'
 },{
     id : 1,
     name : 'Shrey A',
     email : 'shrey183@gmail.com',
     picture : '../../images/shrey.png',
     status : 'Hi !',
-    companies : '1',
+    companies : [1],
     linkedin : 'https://www.linkedin.com/in/shrey-aryan-b4a89796/',
-    position : 'CEO'
+    position : 'Chief Executive Officer (CEO)'
 }]
 
 const EVENT = [{
@@ -75,9 +77,10 @@ const EVENT = [{
     time : '17:00:00' , 
     place : 'Here st. Paris',
     description : 'First Event',
-    companies : '1,2',
-    activities : '1,2'
+    companies : [1,2],
+    activities : [1,2]
 }]
+
 
 function getCompanyByID(company,id) {
     return company.filter(
@@ -107,13 +110,13 @@ function loadFeeds(companyId){
         <div class="feed">
             <a class = "user-feed">
                 <img class = "picture" src = "${company[0].logo}">
-                <pre>${company[0].name}<br><p style="font-size:10px">${ACTIVITY[i].date.slice(0,10)}</p></pre>
+                <pre>${company[0].name}<br><p style="font-size:10px">${ACTIVITY[i].date}</p></pre>
             </a> <br>
             <p class = "text-feed">${ACTIVITY[i].text}</p><br>
             <div class="buttons">
-                <a href="#">Like</a>
-                <a href="#">Comment</a>
-                <a href="#">Share</a>
+            <a href="#"><img class="icon-feed" src="../../images/user-page/like.png"></a>
+            <a href="#"><img class="icon-feed" src="../../images/user-page/comment.png"></a>
+            <a href="#"><img class="icon-feed" src="../../images/user-page/share.png"></a>
             </div>
         </div>`;
     }
@@ -132,7 +135,7 @@ function loadProfile(companyId){
         </div>`;
         document.getElementById("ban").innerHTML = query;
         query = `
-            <a><img class="symbol" src="../../images/user-page/calendar.png">Founded on ${company[0].founded_on.slice(0,10)}</a><br>
+            <a><img class="symbol" src="../../images/user-page/calendar.png">Founded on ${company[0].founded_on}</a><br>
             <a><img class="symbol" src="../../images/user-page/location.png">Based in ${company[0].based_in}</a><br>
             <a><img class="symbol" src="../../images/user-page/description.png">${company[0].description}</a><br>
             <a><img class="symbol" src="../../images/user-page/industry.png">${company[0].industries}</a><br>

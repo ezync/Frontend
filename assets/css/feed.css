@@ -37,6 +37,12 @@
     border: 1px solid rgb(104, 98, 98);
 }
 
+.feed .buttons .icon-feed{
+    margin : 10px 10px 10px 10px;
+    width:20px;
+    height:20px;
+}
+
 .feed .user-feed {
     margin-bottom: 10px;
     font-size: medium;
