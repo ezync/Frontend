@@ -11,7 +11,7 @@ body{
 
 .loginbox{
     width: 320px;
-    height: 420px;
+    height: 500px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -49,7 +49,8 @@ h1{
     margin-bottom: 20px;
 }
 
-.loginbox input[type="text"], input[type="password"], input[type="email"]
+.loginbox input[type="text"], input[type="password"], input[type="email"],
+input[type="linkedin"], input[type="date"]
 {
     border: none;
     border-bottom: 1px solid #fff;
@@ -87,9 +88,61 @@ h1{
     color: #ffc107;
 }
 
+.loginbox button[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width:100px;
+}
+
+
+.loginbox button[type="button"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.tab {
+    display: none;
+  }
 
 
 
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px 50px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: rgb(175, 112, 76);
+}
+.fin {
+    display : none;
+}
+
+#finished {
+    display: none;
+    margin-top : 40px !important;
+    margin-bottom: 40px !important;
+}
+  
 
 
 

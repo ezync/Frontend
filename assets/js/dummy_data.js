@@ -9,7 +9,8 @@ const COMPANY = [{
     description : 'First company',
     industries : 'Social Media',
     activities : [1,2],
-    individuals : [1,2,3]
+    individuals : [1,2,3],
+    state : 0
 },
 {
     id : 2,
@@ -21,7 +22,8 @@ const COMPANY = [{
     description : 'Second company',
     industries : 'Social Media',
     activities : [],
-    individuals : []
+    individuals : [],
+    state : 0
 }]
 
 const ACTIVITY = [{
@@ -50,7 +52,8 @@ const USER = [{
     status : 'Hi !',
     companies : [1],
     linkedin : 'https://www.linkedin.com/in/nicholas-budiharsa-4236bb170/',
-    position : 'Chief Executive Officer (CEO)'
+    position : 'Chief Executive Officer (CEO)',
+    state : 0
 },{
     id : 2,
     name : 'Jiwon P',
@@ -59,7 +62,8 @@ const USER = [{
     status : 'Hi !',
     companies : [1],
     linkedin : 'https://www.linkedin.com/in/jiwon-park-473998170/',
-    position : 'Chief Executive Officer (CEO)'
+    position : 'Chief Executive Officer (CEO)',
+    state : 0
 },{
     id : 1,
     name : 'Shrey A',
@@ -68,7 +72,8 @@ const USER = [{
     status : 'Hi !',
     companies : [1],
     linkedin : 'https://www.linkedin.com/in/shrey-aryan-b4a89796/',
-    position : 'Chief Executive Officer (CEO)'
+    position : 'Chief Executive Officer (CEO)',
+    state : 0
 }]
 
 const EVENT = [{
